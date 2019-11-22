@@ -1,3 +1,4 @@
 *.pyc
-dataSet/fer2013.csv
 *.log
+dataSet/fer2013.csv
+models/
