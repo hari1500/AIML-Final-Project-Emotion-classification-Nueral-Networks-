@@ -1,0 +1,5 @@
+*.pyc
+dataSet/
+*.log
+test_images/
+models/
