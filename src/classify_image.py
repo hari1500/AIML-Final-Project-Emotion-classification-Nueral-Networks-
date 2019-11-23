@@ -56,5 +56,4 @@ if len(faces) > 0:
 bgr_image = cv2.cvtColor(rgb, cv2.COLOR_RGB2BGR)
 cv2.imshow('face', bgr_image)
 cv2.imwrite('../output/'+source_image_path.split('/')[-1],bgr_image)
-if cv2.waitKey(2000) & 0xFF == ord('q'): sys.exit()
-cv2.destroyAllWindows()
+if cv2.waitKey() & 0xFF == ord('q'): sys.exit()
