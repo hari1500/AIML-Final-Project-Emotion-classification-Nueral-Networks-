@@ -9,7 +9,7 @@ from utils.inference import detect_faces, draw_text, draw_bounding_box, load_det
 
 # parameters for loading data and images
 detection_model_path = '../models/haarcascade_files/haarcascade_frontalface_default.xml'
-emotion_model_path = '../models/model.74-0.64.hdf5'
+emotion_model_path = '../models/model.85-0.65.hdf5'
 
 # hyper-parameters for bounding boxes shape
 # loading models

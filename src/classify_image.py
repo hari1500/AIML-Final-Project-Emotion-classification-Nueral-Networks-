@@ -10,7 +10,7 @@ from utils.inference import detect_faces, draw_text, draw_bounding_box, load_det
 
 # parameters for loading data and images
 detection_model_path = '../models/haarcascade_files/haarcascade_frontalface_default.xml'
-emotion_model_path = '../models/model.74-0.64.hdf5'
+emotion_model_path = '../models/model.85-0.65.hdf5'
 source_image_path = sys.argv[1]
 
 # hyper-parameters for bounding boxes shape
@@ -51,7 +51,7 @@ if len(faces) > 0:
     color = color.tolist()
 
     draw_bounding_box(faces, rgb, color)
-    draw_text(faces, rgb, label, color, 0, -45, 1, 1)
+    draw_text(faces, rgb, label, color, 0, -5, 1, 1)
 
 bgr_image = cv2.cvtColor(rgb, cv2.COLOR_RGB2BGR)
 cv2.imshow('face', bgr_image)
